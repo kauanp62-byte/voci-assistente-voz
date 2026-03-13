@@ -1,13 +1,13 @@
 # 🎙️ Voci — Assistente de Voz com IA
 
-Um assistente de voz local em Python que grava sua voz, transcreve o áudio, consulta uma IA e responde em voz sintetizada — tudo em português.
+Um assistente de voz local em Python que grava sua voz, transcreve o áudio, consulta uma IA e exibe a resposta em texto — tudo em português.
 
 ---
 
 ## 🖥️ Demonstração
 
 ```
-Você fala  →  Whisper transcreve  →  Groq (Llama 3.3) responde  →  Edge-TTS fala
+Você fala  →  Whisper transcreve  →  Groq (Llama 3.3) responde  →  Texto exibido na tela
 ```
 
 ---
@@ -17,7 +17,6 @@ Você fala  →  Whisper transcreve  →  Groq (Llama 3.3) responde  →  Edge-T
 - 🎤 Gravação de áudio pelo microfone
 - 📝 Transcrição local com **Faster-Whisper**
 - 🧠 Respostas inteligentes via **Groq API** (Llama 3.3 70B)
-- 🔊 Síntese de voz em português com **Edge-TTS**
 - 🖼️ Interface gráfica minimalista com **Tkinter**
 
 ---
@@ -52,8 +51,8 @@ Voice Assistant/
 
 **1. Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/voice-assistant.git
-cd voice-assistant
+git clone https://github.com/kauanp62-byte/voci-assistente-voz.git
+cd voci-assistente-voz
 ```
 
 **2. Crie e ative o ambiente virtual**
@@ -107,7 +106,6 @@ python main.py
 ## 📝 Observações
 
 - O modelo Whisper `base` é baixado automaticamente na primeira execução (~145 MB)
-- A voz utilizada é `pt-BR-AntonioNeural` (Microsoft Edge TTS)
 - O limite gratuito da Groq é de ~14.400 requisições/dia
 - O arquivo `.env` **nunca** deve ser versionado no Git
 
